@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/details', async (req, res) => {
-    // const user = await userModel.findOne({id: 123});
+    // const user = await userModel.findOne({id: 10001});
     const user = await userModel.find({});
     res.send(user);
 });
